@@ -1,0 +1,15 @@
+#include<iostream>
+
+using namespace std;
+
+int main() {
+
+	int a;
+	cin >> a;
+	int b, d;
+	for (int a11 = 0; a11 < a; a11++) {
+		cin >> b >> d;
+		cout << (b + d)<<endl;
+	}
+	
+}
