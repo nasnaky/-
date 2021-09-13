@@ -1,0 +1,15 @@
+#include<iostream>
+
+using namespace std;
+
+int main() {
+	int a;
+	cin >> a;
+	char d;
+	int sum = 0;
+	for (int i = 0; i < a; i++) {
+		cin >> d;
+		sum += (int)d - 48;
+	}
+	cout << sum;
+}
