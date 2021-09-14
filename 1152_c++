@@ -1,0 +1,26 @@
+#include<iostream>
+#include<string>
+using namespace std;
+
+int main(int argc, char* argv[]) {
+	string  a;
+	getline(cin, a);
+	int num = 1;
+    bool space = false;
+	if(a.empty()){
+		cout << "0";
+		return 0;
+	}
+	for (long unsigned int i = 0; i <= a.size(); i++) {
+		if (a[i] == ' ') {
+			num++;
+		}
+	}
+	if (a[0] == ' ') {
+		num -= 1;
+	}
+	if (a[a.size()-1] == ' ') {
+		num -= 1;
+	}
+	cout << num;
+}
