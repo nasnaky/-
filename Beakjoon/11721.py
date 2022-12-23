@@ -1,0 +1,5 @@
+import sys
+
+S = sys.stdin.readline()
+for i in range(len(S) // 10 + 1):
+    print(S[i * 10:(i+1) * 10])
